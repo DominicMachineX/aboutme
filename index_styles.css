@@ -25,6 +25,12 @@ body {
 
     overflow: hidden;
     border-radius: 50%;
+    transition: 0.5s;
+}
+
+.propic:hover {
+    transform: scale(1.2);
+
 }
 
 .propic img {
@@ -66,7 +72,6 @@ body {
     gap: 40px;
 
     margin: 100px auto;
-
     max-width: 1000px;
 }
 
@@ -83,12 +88,19 @@ main {
 }
 
 a {
-    color:blue;
+    color:#499de6;
     text-decoration-thickness: 1px;
+    transition: 0.3s;
 }
 
 a:visited {
-    color: blue;
+    color: #499de6;
+}
+
+a:hover {
+    color: #e82344;
+    font-size: larger;
+    
 }
 
 .connection {
@@ -130,19 +142,31 @@ a:visited {
 }
 
 .hobbies-card {
-    background-color: yellow;
+    background-color: #fce051;
     width: 320px;
     margin-top: 50px;
     display: flex;
     gap:20px ;
+    transition: 0.5s;
 }
-    
 
 .hobbies-card img {
     object-fit: cover;
     width: 150px;
     height: 200px;
     display: block;
+    transition: 0.5s;
+}
+
+.hobbies-card:hover img{
+    transform: translateX(-30px);
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+.hobbies-card:hover {
+    transform: translateX(-30px);
+    background-color: #fca151;
 }
 
 .content-title {
